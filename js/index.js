@@ -51,3 +51,46 @@ function reversedHacker1(hacker1) {
 
 console.log(reversedHacker1(hacker1));
 
+//BONO 1
+
+let loremIpsum =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a dictum odio. In ornare neque eu pharetra maximus. In hac habitasse platea dictumst. Etiam non tempor magna. Ut ultricies tincidunt turpis sed semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin pretium augue quis tempus scelerisque. Ut finibus mattis erat, a tempor orci condimentum ac. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse ut augue laoreet, fermentum arcu at, accumsan dolor. Ut tristique leo quis ligula commodo eleifend. Praesent nec aliquam nulla. Maecenas lacinia metus ac sapien facilisis rutrum. Nam tincidunt, tortor quis facilisis vestibulum, turpis justo sodales sapien, ac mollis urna leo maximus justo. Praesent dui nibh, eleifend eget euismod eget, porta sed mi. Vivamus posuere eros elit, id semper massa consectetur ut. \nSuspendisse potenti. Nullam finibus porta magna, ut blandit lacus efficitur in. Integer venenatis dapibus mauris in suscipit. Nunc interdum dolor in nisi mattis, nec tempus quam molestie. Nulla eleifend consequat ex, at vehicula nibh elementum et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin ullamcorper, elit eu pulvinar pharetra, tellus justo hendrerit metus, a pulvinar ex sapien ut felis. In efficitur suscipit libero, id varius sapien interdum quis.\nUt scelerisque dictum ultrices. Proin vitae nulla nec nisi lobortis posuere. Nunc nec venenatis neque. Etiam iaculis neque sem, sagittis interdum odio luctus fermentum. Morbi porta tortor ac dapibus hendrerit. Morbi mauris urna, iaculis sed efficitur ut, efficitur vitae nisi. Ut quis varius tellus. Cras metus metus, condimentum eget pellentesque a, mollis in eros. In accumsan a nisi et tempus. Nunc bibendum, justo vel vulputate convallis, augue nisi semper enim, ac convallis neque augue non augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam cursus odio sit amet sem lacinia vestibulum. Nam placerat iaculis sapien, eget aliquet eros fringilla non. Praesent a mauris mollis, blandit ipsum in, maximus neque. Nullam egestas luctus tincidunt.";
+
+console.log(loremIpsum);
+
+function countLorem(str) {
+  const wordsArray = str.split(" ");
+
+  return wordsArray.length;
+}
+console.log(countLorem(loremIpsum));
+
+function countET(text) {
+  const wordsLorem = text.split(/\s+/);
+
+  const count = wordsLorem.filter(
+    (word) => word === "et" || word === "Et"
+  ).length;
+
+  return count;
+}
+console.log(countET(loremIpsum));
+
+//BONO 2
+let phraseToCheck = "roma é amor";
+
+function palindrome(str) {
+  let start = 0;
+  let end = str.length - 1;
+
+  while (start < end) {
+    if (str[start] !== str[end]) {
+      return false;
+    }
+
+    start++;
+    end--;
+  }
+  return true;
+}
+console.log(palindrome(phraseToCheck));
