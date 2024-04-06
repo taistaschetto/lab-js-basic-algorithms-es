@@ -23,3 +23,31 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
+
+//3.1
+function printUppercase(hacker1) {
+  const uppercaseHacker1 = hacker1.toUpperCase();
+
+  const lettersArray = uppercaseHacker1.split("");
+
+  const spacedHacker1 = lettersArray.join(" ");
+
+  return spacedHacker1;
+}
+
+console.log(printUppercase(hacker1));
+
+//3.2
+
+function reversedHacker1(hacker1) {
+  const lettersArray = hacker1.split("");
+
+  const reversedArray = lettersArray.reverse();
+
+  const reversedName = reversedArray.join("");
+
+  return reversedName;
+}
+
+console.log(reversedHacker1(hacker1));
+
